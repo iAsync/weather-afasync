@@ -11,7 +11,6 @@
 		7EC848D2181280C500A920C2 /* iAsyncWeatherOperations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EC848D1181280C500A920C2 /* iAsyncWeatherOperations.h */; };
 		7EC848DB181280C500A920C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848DA181280C500A920C2 /* XCTest.framework */; };
 		7EC848DC181280C500A920C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848CC181280C500A920C2 /* Foundation.framework */; };
-		7EC848DE181280C500A920C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848DD181280C500A920C2 /* UIKit.framework */; };
 		7EC848E1181280C600A920C2 /* libiAsyncWeatherOperations.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848C9181280C500A920C2 /* libiAsyncWeatherOperations.a */; };
 		7EC848E7181280C600A920C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7EC848E5181280C600A920C2 /* InfoPlist.strings */; };
 		7EC848E9181280C600A920C2 /* iAsyncWeatherOperationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EC848E8181280C600A920C2 /* iAsyncWeatherOperationsTests.m */; };
@@ -41,55 +40,6 @@
 			remoteGlobalIDString = 7E2A05F5181270F500B39E1D;
 			remoteInfo = iAsyncWeatherModelTests;
 		};
-		7EC8490B181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = JFFAsyncOperations;
-		};
-		7EC8490D181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5391037B14A88BB5007315A3;
-			remoteInfo = "JFFAsyncOperations-clang";
-		};
-		7EC8490F181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7E8F20C914F94BDF00588C7D;
-			remoteInfo = JFFAsyncOperationsFW;
-		};
-		7EC84915181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8D5AE6DB13F3E6C600EB6143;
-			remoteInfo = JFFNetwork;
-		};
-		7EC84917181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65802B22148BFC230040A93A;
-			remoteInfo = JFFNetworkMacOS;
-		};
-		7EC84919181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 539103B714A88BCA007315A3;
-			remoteInfo = "JFFNetwork-clang";
-		};
-		7EC8491B181282D300A920C2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7E8F204314F9494300588C7D;
-			remoteInfo = JFFNetworkFW;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -112,15 +62,13 @@
 		7EC848D1181280C500A920C2 /* iAsyncWeatherOperations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iAsyncWeatherOperations.h; sourceTree = "<group>"; };
 		7EC848D9181280C500A920C2 /* iAsyncWeatherOperationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAsyncWeatherOperationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC848DA181280C500A920C2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7EC848DD181280C500A920C2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7EC848E4181280C600A920C2 /* iAsyncWeatherOperationsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iAsyncWeatherOperationsTests-Info.plist"; sourceTree = "<group>"; };
 		7EC848E6181280C600A920C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7EC848E8181280C600A920C2 /* iAsyncWeatherOperationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iAsyncWeatherOperationsTests.m; sourceTree = "<group>"; };
 		7EC848F2181280E400A920C2 /* AWOperationsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWOperationsFactory.h; sourceTree = "<group>"; };
 		7EC848F3181280E400A920C2 /* AWOperationsFactory.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AWOperationsFactory.mm; sourceTree = "<group>"; };
 		7EC848F51812819200A920C2 /* iAsyncWeatherModel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = iAsyncWeatherModel.xcodeproj; path = ../iAsyncWeatherModel/iAsyncWeatherModel.xcodeproj; sourceTree = "<group>"; };
-		7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFFAsyncOperations.xcodeproj; path = ../iAsync/lib/JFFAsyncOperations/JFFAsyncOperations.xcodeproj; sourceTree = "<group>"; };
-		7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFFNetwork.xcodeproj; path = ../iAsync/lib/JFFNetwork/JFFNetwork.xcodeproj; sourceTree = "<group>"; };
+		7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JFFAsyncOperations.xcodeproj; path = "../../lib-third-party/iAsync/lib/JFFAsyncOperations/JFFAsyncOperations.xcodeproj"; sourceTree = "<group>"; };
 		7EC8491D1812833600A920C2 /* AWUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWUrlBuilder.h; sourceTree = "<group>"; };
 		7EC8491E1812833600A920C2 /* AWUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWUrlBuilder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,7 +88,6 @@
 			files = (
 				7EC848DB181280C500A920C2 /* XCTest.framework in Frameworks */,
 				7EC848E1181280C600A920C2 /* libiAsyncWeatherOperations.a in Frameworks */,
-				7EC848DE181280C500A920C2 /* UIKit.framework in Frameworks */,
 				7EC848DC181280C500A920C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,11 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */,
-				7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */,
 				7EC848F51812819200A920C2 /* iAsyncWeatherModel.xcodeproj */,
 				7EC848CC181280C500A920C2 /* Foundation.framework */,
 				7EC848DA181280C500A920C2 /* XCTest.framework */,
-				7EC848DD181280C500A920C2 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -224,27 +169,6 @@
 			children = (
 				7EC848FB1812819200A920C2 /* libiAsyncWeatherModel.a */,
 				7EC848FD1812819200A920C2 /* iAsyncWeatherModelTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7EC84902181282D300A920C2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7EC8490C181282D300A920C2 /* libJFFAsyncOperations.a */,
-				7EC8490E181282D300A920C2 /* libJFFAsyncOperations-clang.a */,
-				7EC84910181282D300A920C2 /* JFFAsyncOperationsFW.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7EC84905181282D300A920C2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7EC84916181282D300A920C2 /* libJFFNetwork.a */,
-				7EC84918181282D300A920C2 /* libJFFNetworkMacOS.a */,
-				7EC8491A181282D300A920C2 /* libJFFNetwork-clang.a */,
-				7EC8491C181282D300A920C2 /* JFFNetworkFW.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -311,14 +235,6 @@
 					ProductGroup = 7EC848F61812819200A920C2 /* Products */;
 					ProjectRef = 7EC848F51812819200A920C2 /* iAsyncWeatherModel.xcodeproj */;
 				},
-				{
-					ProductGroup = 7EC84902181282D300A920C2 /* Products */;
-					ProjectRef = 7EC84901181282D300A920C2 /* JFFAsyncOperations.xcodeproj */;
-				},
-				{
-					ProductGroup = 7EC84905181282D300A920C2 /* Products */;
-					ProjectRef = 7EC84904181282D300A920C2 /* JFFNetwork.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -341,55 +257,6 @@
 			fileType = wrapper.cfbundle;
 			path = iAsyncWeatherModelTests.xctest;
 			remoteRef = 7EC848FC1812819200A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC8490C181282D300A920C2 /* libJFFAsyncOperations.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libJFFAsyncOperations.a;
-			remoteRef = 7EC8490B181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC8490E181282D300A920C2 /* libJFFAsyncOperations-clang.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libJFFAsyncOperations-clang.a";
-			remoteRef = 7EC8490D181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC84910181282D300A920C2 /* JFFAsyncOperationsFW.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework.static;
-			path = JFFAsyncOperationsFW.framework;
-			remoteRef = 7EC8490F181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC84916181282D300A920C2 /* libJFFNetwork.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libJFFNetwork.a;
-			remoteRef = 7EC84915181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC84918181282D300A920C2 /* libJFFNetworkMacOS.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libJFFNetworkMacOS.a;
-			remoteRef = 7EC84917181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC8491A181282D300A920C2 /* libJFFNetwork-clang.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libJFFNetwork-clang.a";
-			remoteRef = 7EC84919181282D300A920C2 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7EC8491C181282D300A920C2 /* JFFNetworkFW.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework.static;
-			path = JFFNetworkFW.framework;
-			remoteRef = 7EC8491B181282D300A920C2 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -612,6 +479,7 @@
 				7EC848EE181280C600A920C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EC848EF181280C600A920C2 /* Build configuration list for PBXNativeTarget "iAsyncWeatherOperationsTests" */ = {
 			isa = XCConfigurationList;
@@ -620,6 +488,7 @@
 				7EC848F1181280C600A920C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

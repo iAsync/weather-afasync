@@ -11,7 +11,6 @@
 		7E2A05EE181270F500B39E1D /* iAsyncWeatherModel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7E2A05ED181270F500B39E1D /* iAsyncWeatherModel.h */; };
 		7E2A05F7181270F500B39E1D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A05F6181270F500B39E1D /* XCTest.framework */; };
 		7E2A05F8181270F500B39E1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A05E8181270F500B39E1D /* Foundation.framework */; };
-		7E2A05FA181270F500B39E1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A05F9181270F500B39E1D /* UIKit.framework */; };
 		7E2A05FD181270F500B39E1D /* libiAsyncWeatherModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2A05E5181270F500B39E1D /* libiAsyncWeatherModel.a */; };
 		7E2A0603181270F500B39E1D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E2A0601181270F500B39E1D /* InfoPlist.strings */; };
 		7E2A0605181270F500B39E1D /* iAsyncWeatherModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A0604181270F500B39E1D /* iAsyncWeatherModelTests.m */; };
@@ -55,7 +54,6 @@
 		7E2A05ED181270F500B39E1D /* iAsyncWeatherModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iAsyncWeatherModel.h; sourceTree = "<group>"; };
 		7E2A05F5181270F500B39E1D /* iAsyncWeatherModelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iAsyncWeatherModelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E2A05F6181270F500B39E1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		7E2A05F9181270F500B39E1D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		7E2A0600181270F500B39E1D /* iAsyncWeatherModelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iAsyncWeatherModelTests-Info.plist"; sourceTree = "<group>"; };
 		7E2A0602181270F500B39E1D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7E2A0604181270F500B39E1D /* iAsyncWeatherModelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iAsyncWeatherModelTests.m; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			files = (
 				7E2A05F7181270F500B39E1D /* XCTest.framework in Frameworks */,
 				7E2A05FD181270F500B39E1D /* libiAsyncWeatherModel.a in Frameworks */,
-				7E2A05FA181270F500B39E1D /* UIKit.framework in Frameworks */,
 				7E2A05F8181270F500B39E1D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,7 +121,6 @@
 			children = (
 				7E2A05E8181270F500B39E1D /* Foundation.framework */,
 				7E2A05F6181270F500B39E1D /* XCTest.framework */,
-				7E2A05F9181270F500B39E1D /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
