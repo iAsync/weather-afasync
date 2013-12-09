@@ -1,0 +1,58 @@
+{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Dnipropetrovs'k",
+               "short_name" : "Dnipropetrovs'k",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Dnipropetrovs'ka city council",
+               "short_name" : "Dnipropetrovs'ka city council",
+               "types" : [ "administrative_area_level_3", "political" ]
+            },
+            {
+               "long_name" : "Dnipropetrovsk Oblast",
+               "short_name" : "Dnipropetrovsk Oblast",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "Ukraine",
+               "short_name" : "UA",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Dnipropetrovs'k, Dnipropetrovsk Oblast, Ukraine",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 48.56886799999999,
+                  "lng" : 35.242738
+               },
+               "southwest" : {
+                  "lat" : 48.355729,
+                  "lng" : 34.757975
+               }
+            },
+            "location" : {
+               "lat" : 48.464717,
+               "lng" : 35.046183
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 48.56886799999999,
+                  "lng" : 35.242738
+               },
+               "southwest" : {
+                  "lat" : 48.355729,
+                  "lng" : 34.757975
+               }
+            }
+         },
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
