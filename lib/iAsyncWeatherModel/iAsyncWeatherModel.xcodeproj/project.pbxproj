@@ -357,7 +357,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					../iAsync/lib/,
+					"../../lib-third-party/iAsync/lib/",
 					..,
 					.,
 				);
@@ -396,7 +396,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					../iAsync/lib/,
+					"../../lib-third-party/iAsync/lib/",
 					..,
 					.,
 				);
