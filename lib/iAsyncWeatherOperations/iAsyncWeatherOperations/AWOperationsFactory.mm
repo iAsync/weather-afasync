@@ -9,10 +9,10 @@
 #import "AWOperationsFactory.h"
 
 #import "AWUrlBuilder.h"
+#import "AFSessionBuilder.h"
 
 @implementation AWOperationsFactory
 
-//dataURLResponseLoader
 
 +(JFFAsyncOperation)asyncWeatherForAddress:( NSString* )userInput
 {
@@ -44,23 +44,28 @@
 {
    NSString* requestUrlString = [ AWUrlBuilder locationGetterForAddress: userInput ];
    NSURL* requestUrl = [ NSURL URLWithString: requestUrlString ];
-
-   if ( nil == requestUrl )
+   NSURLRequest* request = [ NSURLRequest requestWithURL: requestUrl ];
+   
+   if ( nil == request )
    {
       return asyncOperationWithError( [ self badUrlError ] );
    }
    
-   NSData*       postData = nil;
-   NSDictionary* headers  = nil;
-   JFFAsyncOperation result = dataURLResponseLoader( requestUrl, postData, headers );
+
+   AFHTTPSessionManager* session = [ AFSessionBuilder locationSessionManager ];
+   JFFAsyncOperation result =
+   [ AFAsyncOperationFactory asyncDataTaskOperationFromRequest: request
+                                                    andSession: session ];
    
    return [ result copy ];
 }
 
 +(JFFAsyncOperationBinder)parseRawAddressBinder
 {
-   JFFAsyncOperationBinder result = ^JFFAsyncOperation( NSData* jsonLocation )
+   JFFAsyncOperationBinder result = ^JFFAsyncOperation( AFDataTaskCompletionInfo* response )
    {
+      NSData* jsonLocation = objc_kind_of_cast<NSData>( response.responseObject );
+      
       JFFSyncOperation parser = ^AWCoordinates*( NSError** parseError )
       {
          id<AWCoordinatesParser> parser = [ AWParserFactory jsonCoordinatesParser ];
@@ -77,26 +82,34 @@
 
 +(JFFAsyncOperationBinder)getWeatherBinder
 {
-   JFFAsyncOperationBinder result = ^JFFAsyncOperation( id rawCoordinates )
+   JFFAsyncOperationBinder result = ^JFFAsyncOperation( AWCoordinates* coordinates )
    {
-      AWCoordinates* coordinates = objc_member_of_cast<AWCoordinates>( rawCoordinates );
-      
       NSString* urlString = [ AWUrlBuilder weatherGetterForCoordinates: coordinates ];
       NSURL* requestUrl = [ NSURL URLWithString: urlString ];
-      if ( nil == requestUrl )
+      NSURLRequest* request = [ NSURLRequest requestWithURL: requestUrl ];
+      
+      if ( nil == request )
       {
          return asyncOperationWithError( [ self badUrlError ] );
       }
       
+      AFHTTPSessionManager* session = [ AFSessionBuilder locationSessionManager ];
+      JFFAsyncOperation loader =
+      [ AFAsyncOperationFactory asyncDataTaskOperationFromRequest: request
+                                                       andSession: session ];
+
       
-      NSData*       postData = nil;
-      NSDictionary* headers  = nil;
-      JFFAsyncOperation loader = dataURLResponseLoader( requestUrl, postData, headers );
-      
-      
-      JFFChangedResultBuilder resultHook = ^NSDictionary*(NSData* weatherJson)
+      JFFChangedResultBuilder resultHook = ^NSDictionary*( AFDataTaskCompletionInfo* response)
       {
-         return @{ @"location" : coordinates, @"rawWeather" : weatherJson };
+         NSData* weatherJson = objc_kind_of_cast<NSData>( response.responseObject );
+
+         NSDictionary* parsedLocationAndRawWeather =
+         @{
+            @"location"   : coordinates,
+            @"rawWeather" : weatherJson
+         };
+         
+         return parsedLocationAndRawWeather;
       };
 
       JFFAsyncOperation hookedLoader = asyncOperationWithChangedResult( loader, resultHook );
