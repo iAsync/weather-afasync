@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E8A7B2D1857BFBD002BFA8D /* AFSessionBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8A7B2C1857BFBD002BFA8D /* AFSessionBuilder.m */; };
 		7EC848CD181280C500A920C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848CC181280C500A920C2 /* Foundation.framework */; };
 		7EC848D2181280C500A920C2 /* iAsyncWeatherOperations.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7EC848D1181280C500A920C2 /* iAsyncWeatherOperations.h */; };
 		7EC848DB181280C500A920C2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC848DA181280C500A920C2 /* XCTest.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7E8A7B2B1857BFBD002BFA8D /* AFSessionBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSessionBuilder.h; sourceTree = "<group>"; };
+		7E8A7B2C1857BFBD002BFA8D /* AFSessionBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSessionBuilder.m; sourceTree = "<group>"; };
 		7EC848C9181280C500A920C2 /* libiAsyncWeatherOperations.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiAsyncWeatherOperations.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC848CC181280C500A920C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7EC848D0181280C500A920C2 /* iAsyncWeatherOperations-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iAsyncWeatherOperations-Prefix.pch"; sourceTree = "<group>"; };
@@ -134,6 +137,8 @@
 				7EC848F3181280E400A920C2 /* AWOperationsFactory.mm */,
 				7EC8491D1812833600A920C2 /* AWUrlBuilder.h */,
 				7EC8491E1812833600A920C2 /* AWUrlBuilder.m */,
+				7E8A7B2B1857BFBD002BFA8D /* AFSessionBuilder.h */,
+				7E8A7B2C1857BFBD002BFA8D /* AFSessionBuilder.m */,
 			);
 			path = iAsyncWeatherOperations;
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EC848F4181280E400A920C2 /* AWOperationsFactory.mm in Sources */,
+				7E8A7B2D1857BFBD002BFA8D /* AFSessionBuilder.m in Sources */,
 				7EC8491F1812833600A920C2 /* AWUrlBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,6 +357,8 @@
 					../iAsyncWeatherModel,
 					..,
 					.,
+					"../../lib-third-party/AFAsyncNetworking",
+					"../../lib-third-party/AFNetworking",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,6 +399,8 @@
 					../iAsyncWeatherModel,
 					..,
 					.,
+					"../../lib-third-party/AFAsyncNetworking",
+					"../../lib-third-party/AFNetworking",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
